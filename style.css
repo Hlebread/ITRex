@@ -1,0 +1,310 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column-reverse;
+  background: url(bg.jpg);
+  background-size: cover;
+}
+@media (min-width: 768px) {
+  .wrapper {
+    flex-direction: row-reverse;
+  }
+}
+@media (min-width: 1800px) {
+  .wrapper {
+    background-size: cover;
+  }
+}
+
+.form-container {
+  width: 100%;
+  font-family: Poppins;
+  font-style: normal;
+  position: relative;
+  flex: 1 1 568px;
+  margin-top: 72px;
+  background: #f9faff;
+  border-radius: 24px 24px 0px 0px;
+  padding: 32px;
+}
+@media (min-width: 768px) {
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 96px;
+    border-radius: 0;
+    margin: 0;
+    flex-grow: 0;
+    flex-basis: 560px;
+  }
+}
+.form-container .form-container__title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  color: #202225;
+}
+@media (min-width: 768px) {
+  .form-container .form-container__title {
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+@media (min-width: 1800px) {
+  .form-container .form-container__title {
+    position: relative;
+    top: -78px;
+  }
+}
+.form-container .form-container__title .form-container__title__icon {
+  transform: rotate(180deg);
+  margin-right: 34.1px;
+  position: relative;
+  left: 10px;
+}
+.form-container .form-container__title .form-container__title__icon path {
+  fill: #a1abc9;
+}
+.form-container .form-container__info {
+  font-size: 15px;
+  line-height: 130%;
+  color: #a1abc9;
+  margin: 24px 0;
+}
+@media (min-width: 768px) {
+  .form-container .form-container__info {
+    margin: 32px 0 0;
+  }
+}
+@media (min-width: 1800px) {
+  .form-container .form-container__info {
+    position: relative;
+    top: -78px;
+  }
+}
+.form-container .form-container__info a {
+  color: #7297ff;
+  text-decoration-line: underline;
+  display: inline-block;
+}
+.form-container .form-container__form .form-container__form__input-container {
+  width: 100%;
+  height: 40px;
+  margin-top: 24px;
+  background: #ffffff;
+  border: 1px solid #dce0ec;
+  box-shadow: 0px 4px 32px rgba(218, 228, 255, 0.16);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+@media (min-width: 768px) {
+  .form-container .form-container__form .form-container__form__input-container {
+    margin-top: 40px;
+    height: 56px;
+  }
+}
+@media (min-width: 1800px) {
+  .form-container .form-container__form .form-container__form__input-container {
+    position: relative;
+    top: -78px;
+  }
+}
+.form-container .form-container__form .form-container__form__input-container:focus-within {
+  border-color: #7297ff !important;
+}
+.form-container .form-container__form .form-container__form__input-container.form-container__form__input-container-invalid {
+  border-color: #ff2567;
+}
+.form-container .form-container__form .form-container__form__input-container .form-container__form__input {
+  height: 56px;
+  width: 100%;
+  padding: 9.5px 0 9.5px 48px;
+  background: none;
+  border: none;
+  outline: none;
+}
+@media (min-width: 768px) {
+  .form-container .form-container__form .form-container__form__input-container .form-container__form__input {
+    padding: 16px 0 12px 64px;
+  }
+}
+.form-container .form-container__form .form-container__form__input-container .form-container__form__input::placeholder {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 140%;
+  color: #a1abc9;
+}
+@media (min-width: 768px) {
+  .form-container .form-container__form .form-container__form__input-container .form-container__form__input::placeholder {
+    font-size: 17px;
+    line-height: 24px;
+  }
+}
+.form-container .form-container__form .form-container__form__input-container .form-container__form__input-container__icon {
+  position: absolute;
+  left: 18px;
+}
+@media (min-width: 768px) {
+  .form-container .form-container__form .form-container__form__input-container .form-container__form__input-container__icon {
+    left: 26px;
+  }
+}
+.form-container .form-container__form .form-container__form__input-container .form-container__form__input-container__icon path {
+  fill: #a1abc9;
+}
+.form-container .form-container__form .form-container__form__input-container .form-container__form__input-container__icon.form-container__form__input-container__icon-show-password {
+  left: unset;
+  right: 17.99px;
+  cursor: pointer;
+}
+.form-container .form-container__form .form-container__form__invalid-message-email,
+.form-container .form-container__form .form-container__form__invalid-message-password {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 120%;
+  align-items: center;
+  letter-spacing: -0.24px;
+  color: #f6657f;
+  margin-top: 14px;
+  display: none;
+}
+@media (min-width: 768px) {
+  .form-container .form-container__form .form-container__form__invalid-message-email,
+.form-container .form-container__form .form-container__form__invalid-message-password {
+    margin-top: 8px;
+  }
+}
+@media (min-width: 1800px) {
+  .form-container .form-container__form .form-container__form__invalid-message-email,
+.form-container .form-container__form .form-container__form__invalid-message-password {
+    position: relative;
+    top: -78px;
+  }
+}
+.form-container .form-container__form .form-container__form__invalid-message-email.form-container__form__invalid-message-password_invalid,
+.form-container .form-container__form .form-container__form__invalid-message-password.form-container__form__invalid-message-password_invalid {
+  display: flex;
+}
+.form-container .form-container__form .form-container__form__submit-button {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 14.5px 48px 14.5px 16px;
+  position: relative;
+  min-width: 116px;
+  height: 48px;
+  margin-top: 32px;
+  background: #7297ff;
+  border: none;
+  border-radius: 8px;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 130%;
+  cursor: pointer;
+}
+@media (min-width: 768px) {
+  .form-container .form-container__form .form-container__form__submit-button {
+    margin-top: 40px;
+    min-width: 138px;
+    height: 56px;
+    font-size: 17px;
+    padding: 16px 56px 16px 24px;
+  }
+}
+@media (min-width: 1800px) {
+  .form-container .form-container__form .form-container__form__submit-button {
+    position: relative;
+    top: -78px;
+  }
+}
+.form-container .form-container__form .form-container__form__submit-button .form-container__form__submit-button__arrow-icon {
+  position: absolute;
+  right: 24.14px;
+  top: 17.34px;
+  bottom: 17.29px;
+  fill: #fff;
+}
+@media (min-width: 1800px) {
+  .form-container .form-container__form .form-container__form__submit-button .form-container__form__submit-button__arrow-icon {
+    right: 32.14px;
+    top: 21.34px;
+    bottom: 21.29px;
+  }
+}
+@media (min-width: 1800px) {
+  .form-container .form-container__form .form-container__form__submit-button.form-container__form__submit-button_reset-button {
+    top: -40px;
+  }
+}
+.form-container .form-container__form .form-container__form__forgot-password-link {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  text-decoration-line: underline;
+  color: #7297ff;
+  margin-top: 32px;
+}
+@media (min-width: 1800px) {
+  .form-container .form-container__form .form-container__form__forgot-password-link {
+    position: relative;
+    top: -78px;
+  }
+}
+.form-container .form-container__footer {
+  position: absolute;
+  bottom: 48px;
+}
+@media (min-width: 768px) {
+  .form-container .form-container__footer {
+    display: flex;
+    gap: 0 12px;
+    bottom: 80px;
+  }
+}
+@media (min-width: 1800px) {
+  .form-container .form-container__footer {
+    bottom: 140px;
+  }
+}
+.form-container .form-container__footer .form-container__form__footer__title {
+  font-size: 15px;
+  line-height: 140%;
+  display: flex;
+  align-items: center;
+  color: #a1abc9;
+}
+@media (min-width: 768px) {
+  .form-container .form-container__footer .form-container__form__footer__title {
+    width: 198px;
+  }
+}
+.form-container .form-container__footer .form-container__form__footer__link {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 130%;
+  display: flex;
+  align-items: center;
+  text-decoration-line: underline;
+  color: #7297ff;
+}
+
+/*# sourceMappingURL=style.css.map */
