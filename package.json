@@ -1,0 +1,30 @@
+{
+  "name": "project-on-native",
+  "version": "1.0.0",
+  "description": "Form for ITRex React Lab",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx webpack serve --history-api-fallback",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hlebread/ITRex.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hlebread/ITRex/issues"
+  },
+  "homepage": "https://github.com/Hlebread/ITRex#readme",
+  "devDependencies": {
+    "@babel/core": "^7.15.8",
+    "@babel/preset-env": "^7.15.8",
+    "babel-loader": "^8.2.3",
+    "css-loader": "^6.4.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.59.1",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.3.1"
+  }
+}
