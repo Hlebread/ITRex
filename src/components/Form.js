@@ -2,7 +2,7 @@ import Router from "../util/Router";
 import Validator from "../util/Validator";
 
 import InputBlock from "./InputBlock";
-import Button from "./Button";
+import Button from "./blocks/Button";
 
 export default function Form() {
   function Controller() {
