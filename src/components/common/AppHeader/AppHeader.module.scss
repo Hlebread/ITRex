@@ -1,0 +1,27 @@
+@import "../../../assets/stylesheets/mixins.scss";
+
+.appHeader {
+  display: flex;
+  justify-content: space-between;
+  top: 0;
+  align-items: center;
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    gap: 13.6px;
+  }
+
+  @include for-phone {
+    padding: 0 24px;
+  }
+}
+
+.info_appHeader {
+  text-align: right;
+  display: none;
+
+  @include for-tablet {
+    display: block;
+  }
+}

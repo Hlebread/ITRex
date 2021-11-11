@@ -1,0 +1,46 @@
+@import "../../../assets/stylesheets/mixins.scss";
+
+.button {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 14px 48px 14px 16px;
+  position: relative;
+  min-width: 116px;
+  height: 48px;
+  background: var(--color-primary);
+  border: none;
+  border-radius: 8px;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 130%;
+  cursor: pointer;
+  align-self: start;
+  text-decoration: none;
+  transition: 0.2s;
+
+  @include for-tablet {
+    min-width: 138px;
+    height: 56px;
+    font-size: 17px;
+    padding: 16px 56px 16px 24px;
+  }
+
+  &__icon {
+    position: absolute;
+    right: 24.14px;
+    bottom: 17.29px;
+    fill: #fff;
+
+    @include for-tablet {
+      right: 32.14px;
+      top: 21.34px;
+      bottom: 21.29px;
+    }
+  }
+
+  //   &:hover {
+  // 	background: var(--color-primary-dark);
+  //   }
+}

@@ -1,0 +1,53 @@
+@import "../../../assets/stylesheets/mixins.scss";
+
+.toolbar-select {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  position: relative;
+
+  &__title_small,
+  &__title {
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__title {
+    display: none;
+
+    @include for-desktop {
+      display: flex;
+    }
+
+    &__content {
+      color: var(--color-primary);
+    }
+
+    &__icon {
+      path {
+        fill: var(--color-primary);
+      }
+    }
+  }
+
+  &__title_small {
+    display: flex;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+
+    @include for-desktop {
+      display: none;
+    }
+
+    &__icon-container {
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
+.toolbar-select__dropList {
+  min-width: 160px !important;
+}

@@ -1,0 +1,53 @@
+@import "../../../assets/stylesheets/mixins.scss";
+
+.toolbar-search {
+  @include for-phone {
+    &:focus-within {
+      position: absolute;
+      width: 100%;
+      z-index: 1;
+    }
+  }
+
+  .input {
+    transition: 0.2s;
+    width: 200px;
+
+    @include for-phone {
+      width: 100%;
+    }
+
+    @include for-desktop {
+      width: 272px;
+    }
+
+    &__container {
+      border-color: transparent;
+    }
+
+    &:not(:focus-within) {
+      width: 40px;
+
+      @include for-desktop {
+        width: 103px;
+      }
+
+      .input__container {
+        box-shadow: none;
+        background: transparent;
+
+        &__icon {
+          left: 9px;
+          @include for-desktop {
+            left: 0;
+          }
+        }
+
+        &__input {
+          padding-left: 38px;
+          padding-right: 0;
+        }
+      }
+    }
+  }
+}

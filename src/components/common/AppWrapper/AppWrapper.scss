@@ -1,0 +1,32 @@
+@import "../../../assets/stylesheets/mixins.scss";
+
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  background: #e3ebff;
+  background: url(../../../assets/images/bg.jpg);
+  display: grid;
+
+  &_auth {
+    grid-template-rows: 72px 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: "header" "container";
+
+    @include for-tablet {
+      grid-template-rows: 1fr;
+      grid-template-columns: 1fr 560px;
+      grid-template-areas: "header container";
+    }
+  }
+
+  &.wrapper_main {
+    background: #e3ebff;
+    grid-template-rows: 80px 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: "header" "container";
+
+    @include for-tablet {
+      padding: 0 64px 48px;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+@import "./mixins.scss";
+
+.nav-link {
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  text-decoration-line: underline;
+  color: var(--color-primary);
+
+  &.nav-link_footer {
+    font-weight: 600;
+    line-height: 130%;
+    padding: 3px 0;
+  }
+}
