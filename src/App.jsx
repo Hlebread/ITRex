@@ -27,7 +27,7 @@ function App() {
         <PatientView />
       </Route>
       <Route path="/404">
-        <div>404</div>
+        <div>405</div>
       </Route>
       <Redirect to={auth ? "/doctor" : "/sign-in"} />
     </Switch>
